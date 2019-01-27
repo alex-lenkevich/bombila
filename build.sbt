@@ -1,3 +1,4 @@
+
 // The simplest possible sbt build file is just one line:
 
 scalaVersion := "2.12.7"
@@ -24,6 +25,17 @@ version := "1.0"
 // Want to use a published library in your project?
 // You can define other libraries as dependencies in your build like this:
 libraryDependencies += "org.typelevel" %% "cats-core" % "1.4.0"
+libraryDependencies += "org.mongodb.scala" %% "mongo-scala-driver" % "2.5.0"
+libraryDependencies += "ch.rasc" % "bsoncodec" % "1.0.1"
+
+libraryDependencies += "org.seleniumhq.selenium" % "selenium-chrome-driver" % "2.3.1"
+
+libraryDependencies += "io.circe" %%  "circe-core"           % "0.11.1"
+libraryDependencies += "io.circe" %%  "circe-generic"        % "0.11.1"
+libraryDependencies += "io.circe" %%  "circe-parser"         % "0.11.1"
+libraryDependencies += "io.circe" %%  "circe-generic-extras" % "0.11.1"
+libraryDependencies += "io.circe" %%  "circe-java8"          % "0.11.1"
+
 // Here, `libraryDependencies` is a set of dependencies, and by using `+=`,
 // we're adding the cats dependency to the set of dependencies that sbt will go
 // and fetch when it starts up.
